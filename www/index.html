@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="author" content="sun">
+		<title>Index</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="all.css"/>
+	</head>
+	<body>
+			<!--导航条-->
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container">
+					<div class="row">
+						<a href="#" class="navbar-brand">前端交流</a>
+						<div class="navbar-title pull-right text-right">
+							<!--提问图标-->
+							<span id="ask">
+								<span class="glyphicon glyphicon-plus"></span>提问	
+							</span>
+							<!--&#x3000;一个中文汉字的宽度-->
+							<!--&nbsp; 一个 space 的宽度-->
+							&#x1000;
+							<!--用户图标-->
+							<span id="user" class="dropdown" data-toggle="dropdown">
+								<span class="glyphicon glyphicon-user"></span>
+								<span id="userName"></span>
+							</span>
+							<!--下拉菜单-->
+							<ul class="dropdown-menu" style="min-width: 90px;">
+								<li ><a href="userInfo.html">个人资料</a></li>
+								<li class="divider"></li>
+								<li id="logOff"><a>退出登录</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+			
+		
+		<!--创建容器，展示所有问题-->
+		<div class="container questions">
+			
+		</div>
+		
+			
+	</body>
+</html>
+<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+<script src="scripts/index.js" type="text/javascript" charset="utf-8"></script>

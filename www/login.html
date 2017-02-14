@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="author" content="sun">
+		<title>Login</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="all.css"/>
+	</head>
+	<body>
+			<!--导航条-->
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container">
+					<div class="row">
+						<div class="navbar-title">
+							<span id="goback" class="glyphicon glyphicon-chevron-left pull-left"></span>
+								登陆
+							<span id="register" class="glyphicon glyphicon-plus-sign pull-right"></span>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<!--表单-->
+			<div class="container">
+				<form action="/user/login" method="post" >
+					<!--昵称-->
+					<div class="form-group">
+						<input type="text" class="form-control" autocomplete="off"  name="petname"  required="" pattern="^[a-zA-Z0-9\u4E00-\u9FA5]{2,16}$" placeholder="请填写昵称" />	
+					</div>
+					
+					<!--密码-->
+					<div class="form-group">
+						<input type="password" class="form-control" name="password" required pattern="^.{6,16}" placeholder="请输入密码"/>
+					</div>
+					
+					<!--提交按钮-->
+					<input type="submit" class="btn btn-success form-control" name="" id="" value="登陆" />
+				</form>
+			</div>	
+			
+			<!--模态框-->
+			<div class="modal fade" role="dialog" id="myModal" >
+				<div class="modal-dialog modal-sm">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">太阳君悄悄的说:</h4>
+						</div>
+						<div class="modal-body">
+							
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">确定</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+	</body>
+</html>
+<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+<script src="scripts/login.js" type="text/javascript" charset="utf-8"></script>

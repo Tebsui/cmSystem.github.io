@@ -1,0 +1,17 @@
+{
+  "name": "sunquestions",
+  "version": "1.0.0",
+  "description": "问答系统",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sun",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.1",
+    "multer": "^1.3.0"
+  }
+}

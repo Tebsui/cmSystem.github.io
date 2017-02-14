@@ -1,0 +1,16 @@
+body {
+	padding-top: 60px;
+	
+}
+
+.navbar-title {
+	font-size: 18px;
+	text-align: center;
+	color: #9D9D9D;
+	padding: 15px;
+	line-height: 20px;
+}
+
+.glyphicon{
+	cursor: pointer;
+}
